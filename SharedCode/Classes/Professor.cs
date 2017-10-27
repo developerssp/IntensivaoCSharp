@@ -13,18 +13,54 @@ namespace SharedCode
         {
 
         }
-        public string Nome { get ; set; }
+        public string Nome { get; set; }
         public int Idade { get; set; }
         public string Sexo { get; set; }
 
-        public bool AprovarAluno()
+        public bool AprovarAluno(string Aluno)
         {
-            return true;
+            var listaAlunos = Listas.ListaAlunos();
+
+            foreach (var aluno in listaAlunos)
+            {
+                if (aluno.Nome == Aluno)
+                {
+                    if (aluno.Nota > 5.0M)
+                    {
+                        return true;
+                    }
+                    else
+                    {
+                        return false;
+                    }
+                }
+            }
+            return false;
         }
 
-        public bool ReprovarAluno()
+
+
+        public bool ReprovarAluno(string Aluno)
         {
-            return false; //teste
+            var listaAlunos = Listas.ListaAlunos();
+
+            foreach (var aluno in listaAlunos)
+            {
+                if (aluno.Nome == Aluno)
+                {
+                    if (aluno.Nota <= 5.0M)
+                    {
+                        return true;
+                    }
+                    else
+                    {
+                        return false;
+                    }
+                }
+            }
+            return false;
         }
+
+
     }
 }

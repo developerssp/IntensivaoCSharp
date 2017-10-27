@@ -13,7 +13,7 @@ namespace CursoCSharpConsole
         {
             Professor prof = new Professor();
 
-           bool alunoAprovado =  prof.AprovarAluno();
+           bool alunoAprovado =  prof.AprovarAluno("Raquel Dudalina");
 
             if (alunoAprovado)
             {

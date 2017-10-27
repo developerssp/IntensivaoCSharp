@@ -40,8 +40,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Classes\Aluno.cs" />
     <Compile Include="Classes\Professor.cs" />
+    <Compile Include="Interface\IAluno.cs" />
     <Compile Include="Interface\IProfessor.cs" />
+    <Compile Include="Listas.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -6,15 +6,15 @@ using System.Threading.Tasks;
 
 namespace SharedCode.Interface
 {
-    public interface IProfessor
+    public interface IAluno
     {
         string Nome { get; set; }
         int Idade { get; set; }
         string Sexo { get; set; }
+        decimal Nota { get; set; }
+        
 
-        bool AprovarAluno(string Aluno);
-
-        bool ReprovarAluno(string Aluno);
+        
 
     }
 }
