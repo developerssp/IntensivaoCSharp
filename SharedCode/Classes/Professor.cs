@@ -9,18 +9,22 @@ namespace SharedCode
 {
     public class Professor : IProfessor
     {
+        public Professor()
+        {
+
+        }
         public string Nome { get ; set; }
         public int Idade { get; set; }
         public string Sexo { get; set; }
 
         public bool AprovarAluno()
         {
-            throw new NotImplementedException();
+            return true;
         }
 
         public bool ReprovarAluno()
         {
-            throw new NotImplementedException();
+            return false;
         }
     }
 }
