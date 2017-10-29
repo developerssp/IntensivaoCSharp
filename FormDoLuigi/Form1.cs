@@ -26,7 +26,7 @@ namespace FormDoLuigi
             MessageBox.Show(string.Format("A idade do professor é: {0}",IdadeProfessor.ToString()),
                 "Resultado da Idade",MessageBoxButtons.OK,MessageBoxIcon.Information);
 
-            //OBRIGADO
+            //OBRIGADO a todas
 
         }
     }
